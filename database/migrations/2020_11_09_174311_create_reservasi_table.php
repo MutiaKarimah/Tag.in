@@ -14,15 +14,17 @@ class CreateReservasiTable extends Migration
     public function up()
     {
         Schema::create('reservasi', function (Blueprint $table) {
-            $table->id();
-            $table->string('IDreservasi')->unique();
-            $table->string('IDtempat');
-            $table->string('IDpengguna');
+            $table->bigIncrements('IDreservasi');
+            $table->unsignedBigInteger('IDtempat');
+            $table->unsignedBigInteger('IDpengguna');
             $table->float('lama_reservasi');
             $table->date('tanggal_reservasi');
+            $table->timestamps();
+        });
+
+        Schema::table('reservasi', function (Blueprint $table) {
             $table->foreign('IDtempat')->references('IDtempat')->on('tempat');
             $table->foreign('IDpengguna')->references('IDpengguna')->on('pengguna');
-            $table->timestamps();
         });
     }
 

@@ -14,18 +14,19 @@ class CreateTempatTable extends Migration
     public function up()
     {
         Schema::create('tempat', function (Blueprint $table) {
-            $table->id();
-            $table->string('IDtempat');
-            $table->string('IDpengelola');
+            $table->bigIncrements('IDtempat');
+            $table->unsignedBigInteger('IDpengelola');
             $table->string('nama_tempat');
             $table->string('deskripsi_tempat');
             $table->string('dokumentasi_tempat');
             $table->float('kapasitas');
             $table->string('status');
             $table->float('biaya');
-            $table->primary('IDtempat');
-            $table->foreign('IDpengelola')->references('IDpengelola')->on('pengelola');
             $table->timestamps();
+        });
+
+        Schema::table('tempat', function (Blueprint $table) {
+            $table->foreign('IDpengelola')->references('IDpengelola')->on('pengelola');
         });
     }
 

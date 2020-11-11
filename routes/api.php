@@ -17,3 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/reservasi','ReservasiController@all'); //untuk metode read (menampilkan data semua reservasi)
+Route::post('/reservasi','ReservasiController@create'); //untuk metode create (menambahkan data reservasi)
