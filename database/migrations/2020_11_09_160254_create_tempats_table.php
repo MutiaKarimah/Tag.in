@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTempatTable extends Migration
+class CreateTempatsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateTempatTable extends Migration
      */
     public function up()
     {
-        Schema::create('tempat', function (Blueprint $table) {
+        Schema::create('tempats', function (Blueprint $table) {
             $table->bigIncrements('IDtempat');
             $table->unsignedBigInteger('IDpengelola');
             $table->string('nama_tempat');
@@ -25,8 +25,8 @@ class CreateTempatTable extends Migration
             $table->timestamps();
         });
 
-        Schema::table('tempat', function (Blueprint $table) {
-            $table->foreign('IDpengelola')->references('IDpengelola')->on('pengelola');
+        Schema::table('tempats', function (Blueprint $table) {
+            $table->foreign('IDpengelola')->references('IDpengelola')->on('pengelolas');
         });
     }
 
@@ -37,6 +37,6 @@ class CreateTempatTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tempat');
+        Schema::dropIfExists('tempats');
     }
 }

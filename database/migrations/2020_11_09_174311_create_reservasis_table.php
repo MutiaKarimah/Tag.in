@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateReservasiTable extends Migration
+class CreateReservasisTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateReservasiTable extends Migration
      */
     public function up()
     {
-        Schema::create('reservasi', function (Blueprint $table) {
+        Schema::create('reservasis', function (Blueprint $table) {
             $table->bigIncrements('IDreservasi');
             $table->unsignedBigInteger('IDtempat');
             $table->unsignedBigInteger('IDpengguna');
@@ -22,9 +22,9 @@ class CreateReservasiTable extends Migration
             $table->timestamps();
         });
 
-        Schema::table('reservasi', function (Blueprint $table) {
-            $table->foreign('IDtempat')->references('IDtempat')->on('tempat');
-            $table->foreign('IDpengguna')->references('IDpengguna')->on('pengguna');
+        Schema::table('reservasis', function (Blueprint $table) {
+            $table->foreign('IDtempat')->references('IDtempat')->on('tempats');
+            $table->foreign('IDpengguna')->references('IDpengguna')->on('penggunas');
         });
     }
 
@@ -35,6 +35,6 @@ class CreateReservasiTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('reservasi');
+        Schema::dropIfExists('reservasis');
     }
 }

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePengelolaTable extends Migration
+class CreateAdminsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,8 @@ class CreatePengelolaTable extends Migration
      */
     public function up()
     {
-        Schema::create('pengelola', function (Blueprint $table) {
-            $table->bigIncrements('IDpengelola');
+        Schema::create('admins', function (Blueprint $table) {
+            $table->bigIncrements('IDadmin');
             $table->string('username');
             $table->string('password');
             $table->timestamps();
@@ -28,6 +28,6 @@ class CreatePengelolaTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pengelola');
+        Schema::dropIfExists('admins');
     }
 }
