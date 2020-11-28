@@ -31,4 +31,8 @@ class PenggunaController extends Controller
             return response()->json('Failed', 400);
         }
     }
+    public function main()
+    {
+        return view('main');
+    }
 }
