@@ -1743,6 +1743,7 @@ h2.w3l-titles:after {
 
 .main-textgrids img {
     width: 100%;
+    padding-top: 60px;
 }
 
 .ab-text p {

@@ -17,3 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/main', 'PenggunaController@main' );
+Route::get('/detail', 'PenggunaController@detail' );
+Route::get('/login', 'PenggunaController@login' );
+Route::get('/signup', 'PenggunaController@signup' );

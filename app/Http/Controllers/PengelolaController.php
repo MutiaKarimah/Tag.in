@@ -18,7 +18,6 @@ class PengelolaController extends Controller
 
         $pengelola->username = $request->input('username');
         $pengelola->password = $request->input('password');
-        
         $pengelola->save();
 
         if($pengelola->save()){

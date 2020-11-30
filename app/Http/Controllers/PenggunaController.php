@@ -33,6 +33,18 @@ class PenggunaController extends Controller
     }
     public function main()
     {
-        return view('main');
+        return view('layout/main');
+    }
+    public function detail()
+    {
+        return view('layout/detail');
+    }
+    public function login()
+    {
+        return view('login');
+    }
+    public function signup()
+    {
+        return view('signup');
     }
 }
