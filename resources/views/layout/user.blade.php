@@ -243,6 +243,66 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											<a href="booking.html">Book Now</a>				
 										</div>
 									</div>
+                                </div>
+                                <div class="pricing-grid grid-one">
+									<div class="w3ls-top">
+										<img src="images/g8.jpg" class="img-responsive" alt="">
+									</div>
+									<div class="w3ls-bottom">
+										<ul class="count">
+											<h3>Thailand</h3>
+											<li>2 Days</li>
+										</ul>
+										<h4> 900<span class="sup">$</span> </h4>
+										<div class="more">
+											<a href="booking.html">Book Now</a>				
+										</div>
+									</div>
+								</div>
+								<div class="pricing-grid grid-two">
+									<div class="w3ls-top">
+										<img src="images/g4.jpg" class="img-responsive" alt="">
+									</div>
+									<div class="w3ls-bottom">
+										<ul class="count">
+											<h3>Newyork</h3>
+											<li>2 Days</li>
+										</ul>
+										<h4> 750<span class="sup">$</span> </h4>
+										<div class="more">
+											<a href="booking.html">Book Now</a>				
+										</div>
+									</div>
+								</div>
+								<div class="pricing-grid grid-three">
+									<div class="w3ls-top">
+										<img src="images/g5.jpg" class="img-responsive" alt="">
+									</div>
+									<div class="w3ls-bottom">
+										<ul class="count">
+											<h3>Australia</h3>
+											<li>2 Days</li>
+										</ul>
+										<h4> 850<span class="sup">$</span> </h4>
+										<div class="more">
+											<a href="booking.html">Book Now</a>			
+										</div>
+									</div>
+								</div>
+								<div class="zb pricing-grid grid-four">
+									<div class="w3ls-top">
+										<img src="images/g11.jpg" class="img-responsive" alt="">
+									</div>
+									<div class="w3ls-bottom">
+										<ul class="count">
+											<h3>Dubai</h3>
+											<li>2 Days</li>
+										</ul>
+										<h4> 950<span class="sup">$</span> </h4>
+										<div class="more">
+											<a href="booking.html">Book Now</a>				
+										</div>
+									</div>
 								</div>
 								<div class="clearfix"> </div> 
 				<!--End-slider-script-->

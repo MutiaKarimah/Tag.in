@@ -1077,12 +1077,8 @@ span.video-text i {
     width: 31%;
 }
 
-.pricing-grid.grid-two {
-    margin: 0 2em;
-}
-
-.pricing-grid.grid-three {
-    margin: 0 2em 0 0;
+.pricing-grid.grid-box {
+    margin: 1em 0.75em;
 }
 
 .pricing-grid h3 {
