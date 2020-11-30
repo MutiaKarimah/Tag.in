@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Tag.in</title>
+<title>@yield('title')</title>
 <!-- custom-theme -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -69,56 +69,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 		</div>
 		<!-- //Top-Bar -->
-		<!-- w3-banner -->
-	<div class="banner">
-		<div class="banner-dott1">
-			<div class="w3-banner">
-			
-				<div  class="callbacks_container">
-				<ul class="rslides" id="slider3">
-					<li>
-						<div class="banner-text">
-					
-							<h3>Mau cari tempat buat acara?</h3>
-							<p>Located in SEC 24, TWP 58 N., 101 W., in Park County, WY. 
-								A part of Record of Survey # 2008-3512 in Cabinet J, Page 19, Park 
-								County Records.</p>
-								<a href="#" class="read-agileits" data-toggle="modal" data-target="#myModal">View Details</a>
-						</div>
-					</li>
-					<li>
-						<div class="banner-text">
-					
-							<h3>Butuh tempat buat nikahan?</h3>
-							<p>Located in SEC 24, TWP 58 N., 101 W., in Park County, WY. 
-								A part of Record of Survey # 2008-3512 in Cabinet J, Page 19, Park 
-								County Records.</p>
-								<a href="#" class="read-agileits" data-toggle="modal" data-target="#myModal">View Details</a>
-						</div>
-					</li>
-					<li>
-						<div class="banner-text">
-					
-							<h3>Cari lokasi buat seminar?</h3>
-							<p>Located in SEC 24, TWP 58 N., 101 W., in Park County, WY. 
-								A part of Record of Survey # 2008-3512 in Cabinet J, Page 19, Park 
-								County Records.</p>
-								<a href="#" class="read-agileits" data-toggle="modal" data-target="#myModal">View Details</a>
-						</div>
-					</li>
-				</ul>
-			</div>	
-			
-			</div>
-					
-		<!-- //w3-banner -->
-		</div>
-	</div>
 <!-- //banner -->
 	<!-- advantages -->
 	<div class="two-grids">
 		<div class="container">
-<div class="wthree_head_section">
+            <div class="wthree_head_section">
 				<h3 class="w3l_header">Welcome to <span>Tag.in</span></h3>
 				<p>A travel agency is a private retailer or public service that provides travel and tourism related services to the public on behalf of suppliers such as activities</p>
 			</div>
