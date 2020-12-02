@@ -44,7 +44,7 @@
                     <div class="w3_agileits_main_grid w3l_main_grid">
                         <div class="agileits_grid">
                             <h5>Nomor HP</h5>
-                                <input type="text" name="phone" placeholder="Masukkan Nomor HP" required="">
+                                <input type="number" name="phone" placeholder="Masukkan Nomor HP" required="">
                         </div>
                     </div>
                     <div class="clearfix"></div>

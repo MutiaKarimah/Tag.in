@@ -823,6 +823,7 @@ textarea {
 
 input[type="text"],
 input[type="email"],
+input[type="number"],
 textarea {
     width: 100%;
     padding: 10px;
@@ -845,6 +846,7 @@ textarea {
 }
 
 .aitssubmitw3ls input[type="submit"] {
+    width: 100%;
     padding: 12px 100px;
     border: none;
     outline: none;
@@ -908,13 +910,13 @@ textarea {
 
 @media(max-width:1280px) {
     .head {
-        width: 61%;
+        width: 45%;
     }
 }
 
 @media(max-width:1080px) {
     .head {
-        width: 71%;
+        width: 53%;
     }
 }
 

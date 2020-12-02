@@ -47,4 +47,8 @@ class PenggunaController extends Controller
     {
         return view('signup');
     }
+    public function booking()
+    {
+        return view('layout/booking');
+    }
 }
