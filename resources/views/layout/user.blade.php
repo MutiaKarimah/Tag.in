@@ -63,7 +63,33 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<li><a href="typography.html">Typography</a></li>
 								</ul>
 							</li>
-							<li><a href="/login">Login</a></li>
+								@if(!Auth::user())
+									<li><a href="/login">Login</a></li>
+								
+								@endif
+							@if(Auth::user())
+									{{-- <li><a href="/login">Log</a></li> --}}
+									<li>
+								<a class="" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+							</li>
+								
+							@endif
+
+							{{-- <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }}
+                                    
+                                </a> --}}
+
+                                <div class="" aria-labelledby="navbarDropdown">
+                                    
 						</ul>
 					</nav>
 				</div>

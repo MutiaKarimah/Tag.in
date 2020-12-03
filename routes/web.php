@@ -20,11 +20,7 @@ Route::post('signup', 'AuthController@signup');
  
 Route::group(['middleware' => 'auth'], function () {
  
-	
-
- 
-});
-Route::get('/main', 'PenggunaController@main' );
+	Route::get('/main', 'PenggunaController@main' );
     
     // Route::get('home', 'HomeController@index')->name('home');
     Route::get('logout', 'AuthController@logout')->name('logout');
@@ -32,9 +28,17 @@ Route::get('/main', 'PenggunaController@main' );
 
 	Route::get('/booking', 'PenggunaController@booking' );
 
-Route::get('/', function () {
-    return view('welcome');
+	Route::get('/', function () {
+    return view('/layout/main');
+	});
+ 
 });
+
+
 // Route::get('/main', 'PenggunaController@main' );
 // Route::get('/login', 'PenggunaController@login' );
 // Route::get('/signup', 'PenggunaController@signup' );
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
