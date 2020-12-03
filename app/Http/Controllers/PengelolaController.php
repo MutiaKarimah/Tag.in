@@ -28,4 +28,12 @@ class PengelolaController extends Controller
             return response()->json('Failed', 400);
         }
     }
+    public function pengelola_tempat()
+    {
+        return view('pengelola/pengelola_tempat');
+    }
+    public function pengelola_reservasi()
+    {
+        return view('pengelola/pengelola_reservasi');
+    }
 }

@@ -44,9 +44,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="{{url('main')}}"></span>
-            			<img class="navbar-header navbar-left" src="{{url('public')}}/img/Tag.png" alt="">
-					</a>
+					<h1><a class="navbar-brand" href="/main">Tag.in</span></a></h1>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
@@ -90,6 +88,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
                                 <div class="" aria-labelledby="navbarDropdown">
                                     
+
 						</ul>
 					</nav>
 				</div>
