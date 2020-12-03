@@ -12,12 +12,29 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', 'AuthController@showFormLogin')->name('login');
+Route::get('login', 'AuthController@showFormLogin')->name('login');
+Route::post('login', 'AuthController@login');
+Route::get('signup', 'AuthController@showFormRegister')->name('signup');
+Route::post('signup', 'AuthController@signup');
+ 
+Route::group(['middleware' => 'auth'], function () {
+ 
+	
+
+ 
+});
+Route::get('/main', 'PenggunaController@main' );
+    
+    // Route::get('home', 'HomeController@index')->name('home');
+    Route::get('logout', 'AuthController@logout')->name('logout');
+	Route::get('/detail', 'PenggunaController@detail' );
+
+	Route::get('/booking', 'PenggunaController@booking' );
 
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/main', 'PenggunaController@main' );
-Route::get('/detail', 'PenggunaController@detail' );
-Route::get('/login', 'PenggunaController@login' );
-Route::get('/signup', 'PenggunaController@signup' );
-Route::get('/booking', 'PenggunaController@booking' );
+// Route::get('/main', 'PenggunaController@main' );
+// Route::get('/login', 'PenggunaController@login' );
+// Route::get('/signup', 'PenggunaController@signup' );

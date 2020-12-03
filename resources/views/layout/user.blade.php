@@ -44,15 +44,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<h1><a class="navbar-brand" href="index.html">Tag.in</span></a></h1>
+					<a class="navbar-brand" href="{{url('main')}}"></span>
+            			<img class="navbar-header navbar-left" src="{{url('public')}}/img/Tag.png" alt="">
+					</a>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 					<nav class="cl-effect-15" id="cl-effect-15">
 						<ul class="nav navbar-nav">
-							<li class="active"><a href="index.html">Home</a></li>
+							<li class="active"><a href="{{url('/main')}}">Home</a></li>
 							<li><a href="about.html">About</a></li>
-							<li><a href="booking.html">Booking</a></li>
+							<li><a href="{{url('/booking')}}">Booking</a></li>
 							<li><a href="gallery.html">Gallery</a></li>
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-hover="Pages" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>

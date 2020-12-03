@@ -7,7 +7,6 @@
 <div class="banner">
 	<div class="banner-dott1">
 		<div class="w3-banner">
-
 			<div  class="callbacks_container">
 				<ul class="rslides" id="slider3">
 					<li>
@@ -156,7 +155,7 @@
 </div>
 <!-- //banner-bottom -->
 <!-- pricing -->
-<div class="w3ls-section wthree-pricing" id="pricing"
+<div class="w3ls-section wthree-pricing" id="pricing">
 	<div class="container">
 		<div class="wthree_head_section">
 			<h3 class="w3l_header">Tag.in <span>Packages</span></h3>
