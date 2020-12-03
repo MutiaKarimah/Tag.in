@@ -44,24 +44,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<h1><a class="navbar-brand" href="index.html">Tag.in</span></a></h1>
+					<h1><a class="navbar-brand" href="/main">Tag.in</span></a></h1>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 					<nav class="cl-effect-15" id="cl-effect-15">
 						<ul class="nav navbar-nav">
-							<li class="active"><a href="index.html">Home</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="booking.html">Booking</a></li>
-							<li><a href="gallery.html">Gallery</a></li>
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-hover="Pages" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>
-								<ul class="dropdown-menu">
-									<li><a href="icons.html">Icons</a></li>
-									<li><a href="typography.html">Typography</a></li>
-								</ul>
-							</li>
-							<li><a href="/login">Login</a></li>
+							<li class="active"><a href="/main">Home</a></li>
+							<li><a href="/tempat">Tempat</a></li>
+							<li><a href="/booking">Booking</a></li>
+							<li><a href="/signup">Sign Up</a></li>
+							<li><a href="/login">Log In</a></li>
 						</ul>
 					</nav>
 				</div>

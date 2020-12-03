@@ -33,11 +33,11 @@ class PenggunaController extends Controller
     }
     public function main()
     {
-        return view('layout/main');
+        return view('pengguna/main');
     }
     public function detail()
     {
-        return view('layout/detail');
+        return view('pengguna/detail');
     }
     public function login()
     {
@@ -49,6 +49,6 @@ class PenggunaController extends Controller
     }
     public function booking()
     {
-        return view('layout/booking');
+        return view('pengguna/booking');
     }
 }

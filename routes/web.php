@@ -21,3 +21,12 @@ Route::get('/detail', 'PenggunaController@detail' );
 Route::get('/login', 'PenggunaController@login' );
 Route::get('/signup', 'PenggunaController@signup' );
 Route::get('/booking', 'PenggunaController@booking' );
+
+Route::get('/pengelolatempat', 'PengelolaController@pengelola_tempat' );
+Route::get('/pengelolareservasi', 'PengelolaController@pengelola_reservasi' );
+
+Route::get('/admintempat', 'AdminController@admin_tempat' );
+Route::get('/adminreservasi', 'AdminController@admin_reservasi' );
+Route::get('/adminpengguna', 'AdminController@admin_pengguna' );
+Route::get('/adminpengelola', 'AdminController@admin_pengelola' );
+Route::get('/adminadmin', 'AdminController@admin_admin' );

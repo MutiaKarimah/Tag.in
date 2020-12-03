@@ -1,4 +1,4 @@
-@extends('layout/user')
+@extends('pengguna/layout')
 
 @section('title', 'Tag.in Home')
 
@@ -17,7 +17,7 @@
 							<p>Located in SEC 24, TWP 58 N., 101 W., in Park County, WY.
 								A part of Record of Survey # 2008-3512 in Cabinet J, Page 19, Park
 								County Records.</p>
-								<a href="#" class="read-agileits" data-toggle="modal" data-target="#myModal">View Details</a>
+								<a href="detail" class="read-agileits">View Details</a>
 						</div>
 					</li>
 					<li>
@@ -27,7 +27,7 @@
 							<p>Located in SEC 24, TWP 58 N., 101 W., in Park County, WY.
 								A part of Record of Survey # 2008-3512 in Cabinet J, Page 19, Park
 								County Records.</p>
-								<a href="#" class="read-agileits" data-toggle="modal" data-target="#myModal">View Details</a>
+								<a href="detail" class="read-agileits">View Details</a>
 						</div>
 					</li>
 					<li>
@@ -37,7 +37,7 @@
 							<p>Located in SEC 24, TWP 58 N., 101 W., in Park County, WY.
 								A part of Record of Survey # 2008-3512 in Cabinet J, Page 19, Park
 								County Records.</p>
-								<a href="#" class="read-agileits" data-toggle="modal" data-target="#myModal">View Details</a>
+								<a href="detail" class="read-agileits">View Details</a>
 						</div>
 					</li>
 				</ul>
