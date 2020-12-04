@@ -32,6 +32,10 @@ class PengelolaController extends Controller
     {
         return view('pengelola/pengelola_tempat');
     }
+    public function pengelola_tambahtempat()
+    {
+        return view('pengelola/pengelola_tambahtempat');
+    }
     public function pengelola_reservasi()
     {
         return view('pengelola/pengelola_reservasi');

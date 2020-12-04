@@ -11,23 +11,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	function hideURLbar(){ window.scrollTo(0,1); } </script>
 
 <!-- For Testimonials slider -->
-<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="all" />
+<link rel="stylesheet" href="/css/flexslider.css" type="text/css" media="all" />
 <!-- //For Testimonials slider -->
 <!-- //custom-theme files-->
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/css/style.css" rel="stylesheet" type="text/css" media="all" />
 <!-- //custom-theme files-->
 
 <!-- font-awesome-icons -->
-<link href="css/font-awesome.css" rel="stylesheet">
+<link href="/css/font-awesome.css" rel="stylesheet">
 <!-- //font-awesome-icons -->
 <!-- googlefonts -->
-<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
-<link href="//fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext,vietnamese" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext,vietnamese" rel="stylesheet">
 <!-- //googlefonts -->
 
-<link rel="stylesheet" href="css/jquery-ui.css" />
-<link href="css/bookingstyle.css" rel="stylesheet" type="text/css" media="all"/>
+<link rel="stylesheet" href="/css/jquery-ui.css" />
+<link href="/css/bookingstyle.css" rel="stylesheet" type="text/css" media="all"/>
 
 </head>
 <body>
@@ -69,13 +69,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <div class="list-group list-group-alternate">
                     <a href="/pengelolareservasi" class="list-group-item"><span class="badge badge-primary">201</span> <i class="ti ti-email"></i> Reservasi </a>
                     <a href="/pengelolatempat" class="list-group-item"><span class="badge">5021</span> <i class="ti ti-eye"></i> Tempat </a>
-                    <a href="#" class="list-group-item"><span class="badge">14</span> <i class="ti ti-headphone-alt"></i> Call </a>
-                    <a href="#" class="list-group-item"><span class="badge">20</span> <i class="ti ti-comments"></i> Messages </a>
-                    <a href="#" class="list-group-item"><span class="badge badge-warning">14</span> <i class="ti ti-bookmark"></i> Bookmarks </a>
-                    <a href="#" class="list-group-item"><span class="badge badge-danger">30</span> <i class="ti ti-bell"></i> Notifications </a>
+                    <a href="/pengelolatempat/tambah" class="list-group-item"><span class="badge"></span> <i class="ti ti-headphone-alt"></i> Tambah Tempat </a>
                 </div>
 			</div>
-		@yield('container')
+			@yield('container')
+		</div>
     </div>
 </div>
 <!-- //typography -->
@@ -146,7 +144,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 			</div>
 			<div class="modal-body">
-				<img src="images/1.jpg" alt=" " class="img-responsive" />
+				<img src="/images/1.jpg" alt=" " class="img-responsive" />
 				<p>Ut enim ad minima veniam, quis nostrum
 					exercitationem ullam corporis suscipit laboriosam,
 					nisi ut aliquid ex ea commodi consequatur? Quis autem
@@ -161,15 +159,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 <!-- //bootstrap-modal-pop-up -->
 <!-- js -->
-<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/jquery-2.1.4.min.js"></script>
 <!-- for bootstrap working -->
-<script src="js/bootstrap.js"></script>
+<script src="/js/bootstrap.js"></script>
 <!-- //for bootstrap working -->
 <!-- //js -->
 <!-- //here starts scrolling icon -->
-<script src="js/SmoothScroll.min.js"></script>
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
+<script src="/js/SmoothScroll.min.js"></script>
+<script type="text/javascript" src="/js/move-top.js"></script>
+<script type="text/javascript" src="/js/easing.js"></script>
 <!-- here stars scrolling script -->
 <script type="text/javascript">
 	$(document).ready(function() {
@@ -200,7 +198,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </script>
 <!-- //scrolling script -->
 <!-- responsiveslides -->
-<script src="js/responsiveslides.min.js"></script>
+<script src="/js/responsiveslides.min.js"></script>
 <script>
 	// You can also use "$(window).load(function() {"
 	$(function () {
@@ -222,14 +220,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </script>
 <!-- //responsiveslides -->
 <!-- stats -->
-<script src="js/jquery.waypoints.min.js"></script>
-<script src="js/jquery.countup.js"></script>
+<script src="/js/jquery.waypoints.min.js"></script>
+<script src="/js/jquery.countup.js"></script>
 <script>
 	$('.counter').countUp();
 </script>
 <!-- //stats -->
 <!-- FlexSlider-JavaScript -->
-<script defer src="js/jquery.flexslider.js"></script>
+<script defer src="/js/jquery.flexslider.js"></script>
 <script type="text/javascript">
 
 			$(window).load(function(){
@@ -243,7 +241,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </script>
 <!-- //FlexSlider-JavaScript -->
 <!-- //Calendar -->
-<script src="js/jquery-ui.js"></script>
+<script src="/js/jquery-ui.js"></script>
 <script>
 	$(function() {
 		$( "#datepicker,#datepicker1" ).datepicker();
@@ -251,7 +249,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </script>
 								<!-- //Calendar -->
 <!--script-->
-<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+<script src="/js/easyResponsiveTabs.js" type="text/javascript"></script>
 <script type="text/javascript">
 	$(document).ready(function () {
 		$('#horizontalTab').easyResponsiveTabs({

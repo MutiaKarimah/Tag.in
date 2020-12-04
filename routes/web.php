@@ -34,6 +34,7 @@ Route::group(['middleware' => 'auth'], function () {
 });
 
 Route::get('/pengelolatempat', 'PengelolaController@pengelola_tempat' );
+Route::get('/pengelolatempat/tambah', 'PengelolaController@pengelola_tambahtempat' );
 Route::get('/pengelolareservasi', 'PengelolaController@pengelola_reservasi' );
 
 Route::get('/main', 'PenggunaController@main' );
