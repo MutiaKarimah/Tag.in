@@ -50,7 +50,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 					<nav class="cl-effect-15" id="cl-effect-15">
 						<ul class="nav navbar-nav">
-							<li><a href="#">Nama Pengelola</a></li>
+							<li><a>Halo, Nama Pengelola</a></li>
 							<li><a href="/login">Log Out</a></li>
 						</ul>
 					</nav>

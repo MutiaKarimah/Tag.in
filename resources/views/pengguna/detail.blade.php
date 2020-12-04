@@ -18,6 +18,12 @@
             <div class="col-md-7 mission">
                 <h4>{{$dat->nama_tempat}}</h4>
                 <p>{{$dat->deskripsi_tempat}}</p>
+                <ul class="ab">
+                    <li><a data-toggle="modal"><i class="fa fa-angle-right"></i> Kapasitas : 1000</a></li>
+                    <li><a data-toggle="modal"><i class="fa fa-angle-right"></i> Status : Not Booked</a></li>
+                    <li><a data-toggle="modal"><i class="fa fa-angle-right"></i> Biaya : Rp. 1 Juta</a></li>
+                    <li><a href="#"> Book Now</a></li>
+                </ul>
             <div class="clearfix"> </div>
         </div>
     </div>

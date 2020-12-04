@@ -62,4 +62,8 @@ class AdminController extends Controller
 
         return view('admin/admin_admin',['users' => $users]);
     }
+    public function admin_tambahpengelola()
+    {
+        return view('admin/admin_tambahpengelola');
+    }
 }

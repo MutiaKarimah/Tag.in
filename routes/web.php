@@ -42,6 +42,7 @@ Route::get('/admintempat', 'AdminController@admin_tempat' );
 Route::get('/adminreservasi', 'AdminController@admin_reservasi' );
 Route::get('/adminpengguna', 'AdminController@admin_pengguna' );
 Route::get('/adminpengelola', 'AdminController@admin_pengelola' );
+Route::get('/adminpengelola/tambah', 'AdminController@admin_tambahpengelola' );
 Route::get('/adminadmin', 'AdminController@admin_admin' );
 Route::get('/welcome', 'PenggunaController@index' );
 

@@ -50,23 +50,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 					<nav class="cl-effect-15" id="cl-effect-15">
 						<ul class="nav navbar-nav">
-							<li class="active"><a href="{{url('/main')}}">Home</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="{{url('/booking')}}">Booking</a></li>
-							<li><a href="gallery.html">Gallery</a></li>
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-hover="Pages" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>
-								<ul class="dropdown-menu">
-									<li><a href="icons.html">Icons</a></li>
-									<li><a href="typography.html">Typography</a></li>
-								</ul>
-							</li>
 								@if(!Auth::user())
 									<li><a href="/login">Log In</a></li>
 
 								@endif
 								@if(Auth::user())
 										{{-- <li><a href="/login">Log</a></li> --}}
+									<li><a>Halo, Nama Pengguna</a></li>
 									<li>
 										<a class="" href="{{ route('logout') }}"
 	                                       onclick="event.preventDefault();
