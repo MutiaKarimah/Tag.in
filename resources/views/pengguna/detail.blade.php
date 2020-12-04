@@ -14,10 +14,7 @@
             <div class="col-md-5 facts">
                 <img src="images/1.jpg" alt=" " />
             </div>
-
-            }
                 <h4>{{$dat->IDtempat}}</h4>
-
             <div class="col-md-7 mission">
                 <h4>{{$dat->nama_tempat}}</h4>
                 <p>{{$dat->deskripsi_tempat}}</p>

@@ -38,7 +38,7 @@ class PenggunaController extends Controller
         // $IDTempat = decrypt($id);
 
         $tes ['res'] = DB::table('tempats')->get();
-        
+
         return view('pengguna.main', $tes);
 
     }
@@ -46,9 +46,9 @@ class PenggunaController extends Controller
     {
         $IDtempat = ($id);
         $res ['dat'] = DB::table('tempats')->where('IDtempat', $IDtempat)->first();;
-        
-        return view('detail', $res);
-        
+
+        return view('pengguna.detail', $res);
+
     }
     public function login()
     {

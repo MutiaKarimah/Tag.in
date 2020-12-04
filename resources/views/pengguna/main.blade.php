@@ -157,17 +157,17 @@
 			<p>Silakan pilih gedung yang anda inginkan!</p>
 		</div>
 		<div class="pricing-grids-info">
-			
-			{{-- @foreach($res as $val)
+
+			@foreach($res as $val)
 				<div class="pricing-grid grid-box">
 					<div class="w3ls-top">
 						<img src="images/g8.jpg" class="img-responsive" alt="">
 					</div>
 					<div class="w3ls-bottom">
-						
+
 						<ul class="count">
 							<h3>{{$val->nama_tempat}}</h3>
-							
+
 						</ul>
 						<h4> {{$val->kapasitas}}<span class="sup"></span> </h4>
 						<div class="more">
@@ -175,7 +175,7 @@
 						</div>
 					</div>
 				</div>
-			@endforeach --}}
+			@endforeach
 			<div class="clearfix"> </div>
 			<!--End-slider-script-->
 		</div>
