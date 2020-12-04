@@ -20,24 +20,34 @@ Route::post('signup', 'AuthController@signup');
  
 Route::group(['middleware' => 'auth'], function () {
  
-	Route::get('/main', 'PenggunaController@main' );
     
     // Route::get('home', 'HomeController@index')->name('home');
     Route::get('logout', 'AuthController@logout')->name('logout');
-	Route::get('/detail', 'PenggunaController@detail' );
+	Route::get('/detail/{IDtempat}', 'PenggunaController@detail' );
 
 	Route::get('/booking', 'PenggunaController@booking' );
 
 	Route::get('/', function () {
-    return view('/layout/main');
+    return view('/pengguna/main');
 	});
  
 });
+
 Route::get('/pengelolatempat', 'PengelolaController@pengelola_tempat' );
 Route::get('/pengelolareservasi', 'PengelolaController@pengelola_reservasi' );
 
+Route::get('/main', 'PenggunaController@main' );
 Route::get('/admintempat', 'AdminController@admin_tempat' );
 Route::get('/adminreservasi', 'AdminController@admin_reservasi' );
 Route::get('/adminpengguna', 'AdminController@admin_pengguna' );
 Route::get('/adminpengelola', 'AdminController@admin_pengelola' );
 Route::get('/adminadmin', 'AdminController@admin_admin' );
+
+
+// Route::get('/main', 'PenggunaController@main' );
+// Route::get('/login', 'PenggunaController@login' );
+// Route::get('/signup', 'PenggunaController@signup' );
+
+Auth::routes();
+
+// Route::get('/home', 'HomeController@index')->name('home');

@@ -106,7 +106,7 @@ class AuthController extends Controller
         $user->email_verified_at = \Carbon\Carbon::now();
         $user->name = ucwords(strtolower($request->name));
         $simpan = $user->save();
- 
+
         if($simpan){
             Session::flash('success', 'Sign Up berhasil! Silahkan login untuk mengakses data');
             return redirect()->route('login');
@@ -114,6 +114,7 @@ class AuthController extends Controller
             Session::flash('errors', ['' => 'Sign Up gagal! Silahkan ulangi beberapa saat lagi']);
             return redirect()->route('signup');
         }
+
     }
  
     public function logout()

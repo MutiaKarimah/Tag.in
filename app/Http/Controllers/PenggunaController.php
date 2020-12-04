@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 use App\Pengguna;
+use DB;
+
 
 use Illuminate\Http\Request;
 
@@ -33,11 +35,20 @@ class PenggunaController extends Controller
     }
     public function main()
     {
-        return view('pengguna/main');
+        // $IDTempat = decrypt($id);
+
+        $tes ['res'] = DB::table('tempats')->get();
+        
+        return view('pengguna.main', $tes);
+
     }
-    public function detail()
+    public function detail(Request $request,$id)
     {
-        return view('pengguna/detail');
+        $IDtempat = ($id);
+        $res ['dat'] = DB::table('tempats')->where('IDtempat', $IDtempat)->first();;
+        
+        return view('detail', $res);
+        
     }
     public function login()
     {

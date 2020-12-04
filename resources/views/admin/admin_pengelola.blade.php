@@ -15,14 +15,21 @@
                     </tr>
                 </thead>
                 <tbody>
+                    @foreach($data as $key => $val)
                     <tr>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>Azka Azka Azka</td>
-                        <td>xxxxxxxx</td>
-                        <td>Edit | Delete</td>
+                        <td>{{$val->IDpengelola}}</td>
+                        <td>{{$val->IDTempat}}</td>
+                        <td>{{$val->username}}</td>
+                        <td>{{$val->password}}</td>
+                        <td>
+                            <a href="{{url('/pengelola/edit/')}}" class="btn btn-inline btn-warning-outline">Edit
+                            </a>                                    
+                            <a href="{{url('/pengelola/delete/')}}" class="btn btn-inline btn-danger-outline">Delete
+                            </a>
+                        </td>
                     </tr>
-                    <tr>
+                    @endforeach
+                    {{-- <tr>
                         <td>2</td>
                         <td>2</td>
                         <td>Mutia Mutia Mutia</td>
@@ -35,7 +42,7 @@
                         <td>Felia Felia Felia</td>
                         <td>xxxxxxxx</td>
                         <td>Edit | Delete</td>
-                    </tr>
+                    </tr> --}}
                 </tbody>
             </table>
         </div>

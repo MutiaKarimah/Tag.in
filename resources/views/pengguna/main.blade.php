@@ -3,7 +3,7 @@
 @section('title', 'Tag.in Home')
 
 @section('container')
-<!-- w3-banner -->
+
 <div class="banner">
 	<div class="banner-dott1">
 		<div class="w3-banner">
@@ -43,12 +43,9 @@
 			</div>
 
 		</div>
-
-	<!-- //w3-banner -->
 	</div>
 </div>
-<!-- //banner -->
-<!-- advantages -->
+
 <div class="two-grids">
 	<div class="container">
 		<div class="wthree_head_section">
@@ -134,9 +131,7 @@
 		<div class="clearfix"> </div>
 	</div>
 </div>
-<!-- //advantages -->
 
-<!-- banner-bottom -->
 <div class="banner-bottom mid-section-agileits">
 	<div class="col-md-7 bannerbottomleft">
 
@@ -162,134 +157,31 @@
 			<p>Silakan pilih gedung yang anda inginkan!</p>
 		</div>
 		<div class="pricing-grids-info">
-			<div class="pricing-grid grid-box">
-				<div class="w3ls-top">
-					<img src="images/g8.jpg" class="img-responsive" alt="">
-				</div>
-				<div class="w3ls-bottom">
-					<ul class="count">
-						<h3>Thailand</h3>
-						<li>2 Days</li>
-					</ul>
-					<h4> 900<span class="sup">$</span> </h4>
-					<div class="more">
-						<a href="/detail">Book Now</a>
+			
+			{{-- @foreach($res as $val)
+				<div class="pricing-grid grid-box">
+					<div class="w3ls-top">
+						<img src="images/g8.jpg" class="img-responsive" alt="">
+					</div>
+					<div class="w3ls-bottom">
+						
+						<ul class="count">
+							<h3>{{$val->nama_tempat}}</h3>
+							
+						</ul>
+						<h4> {{$val->kapasitas}}<span class="sup"></span> </h4>
+						<div class="more">
+							<a href="{{url('/detail/'.$val->IDtempat)}}">Book Now</a>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="pricing-grid grid-box">
-				<div class="w3ls-top">
-					<img src="images/g4.jpg" class="img-responsive" alt="">
-				</div>
-				<div class="w3ls-bottom">
-					<ul class="count">
-						<h3>Newyork</h3>
-						<li>2 Days</li>
-					</ul>
-					<h4> 750<span class="sup">$</span> </h4>
-					<div class="more">
-						<a href="/detail">Book Now</a>
-					</div>
-				</div>
-			</div>
-			<div class="pricing-grid grid-box">
-				<div class="w3ls-top">
-					<img src="images/g5.jpg" class="img-responsive" alt="">
-				</div>
-				<div class="w3ls-bottom">
-					<ul class="count">
-						<h3>Australia</h3>
-						<li>2 Days</li>
-					</ul>
-					<h4> 850<span class="sup">$</span> </h4>
-					<div class="more">
-						<a href="/detail">Book Now</a>
-					</div>
-				</div>
-			</div>
-			<div class="zb pricing-grid grid-box">
-				<div class="w3ls-top">
-					<img src="images/g11.jpg" class="img-responsive" alt="">
-				</div>
-				<div class="w3ls-bottom">
-					<ul class="count">
-						<h3>Dubai</h3>
-						<li>2 Days</li>
-					</ul>
-					<h4> 950<span class="sup">$</span> </h4>
-					<div class="more">
-						<a href="/detail">Book Now</a>
-					</div>
-				</div>
-			</div>
-			<div class="pricing-grid grid-box">
-				<div class="w3ls-top">
-					<img src="images/g8.jpg" class="img-responsive" alt="">
-				</div>
-				<div class="w3ls-bottom">
-					<ul class="count">
-						<h3>Thailand</h3>
-						<li>2 Days</li>
-					</ul>
-					<h4> 900<span class="sup">$</span> </h4>
-					<div class="more">
-						<a href="/detail">Book Now</a>
-					</div>
-				</div>
-			</div>
-			<div class="pricing-grid grid-box">
-				<div class="w3ls-top">
-					<img src="images/g4.jpg" class="img-responsive" alt="">
-				</div>
-				<div class="w3ls-bottom">
-					<ul class="count">
-						<h3>Newyork</h3>
-						<li>2 Days</li>
-					</ul>
-					<h4> 750<span class="sup">$</span> </h4>
-					<div class="more">
-						<a href="/detail">Book Now</a>
-					</div>
-				</div>
-			</div>
-			<div class="pricing-grid grid-box">
-				<div class="w3ls-top">
-					<img src="images/g5.jpg" class="img-responsive" alt="">
-				</div>
-				<div class="w3ls-bottom">
-					<ul class="count">
-						<h3>Australia</h3>
-						<li>2 Days</li>
-					</ul>
-					<h4> 850<span class="sup">$</span> </h4>
-					<div class="more">
-						<a href="/detail">Book Now</a>
-					</div>
-				</div>
-			</div>
-			<div class="zb pricing-grid grid-box">
-				<div class="w3ls-top">
-					<img src="images/g11.jpg" class="img-responsive" alt="">
-				</div>
-				<div class="w3ls-bottom">
-					<ul class="count">
-						<h3>Dubai</h3>
-						<li>2 Days</li>
-					</ul>
-					<h4> 950<span class="sup">$</span> </h4>
-					<div class="more">
-						<a href="/detail">Book Now</a>
-					</div>
-				</div>
-			</div>
+			@endforeach --}}
 			<div class="clearfix"> </div>
 			<!--End-slider-script-->
 		</div>
 	</div>
 </div>
-<!--//pricing-->
 
-<!-- counter -->
 <div class="services-bottom stats services">
 	<div class="banner-dott1">
 		<div class="container">
@@ -348,10 +240,7 @@
 		</div>
 	</div>
 </div>
-<!-- //counter -->
 
-
-<!-- Clients -->
 <div class="clients">
 	<div class="container">
 		<div class="wthree_head_section">
@@ -396,5 +285,5 @@
 		</section>
 	</div>
 </div>
-<!-- //Clients -->
+
 @endsection

@@ -16,30 +16,20 @@
                     </tr>
                 </thead>
                 <tbody>
+                    @foreach($ses as $res)
                     <tr>
-                        <td>1</td>
-                        <td>azka</td>
-                        <td>xxxxxxxx</td>
-                        <td>Azka Azka Azka</td>
-                        <td>000000000000</td>
-                        <td>Edit | Delete</td>
+                        <td>{{$res->IDpengguna}}</td>
+                        <td>{{$res->username}}</td>
+                        <td>{{$res->password}}</td>
+                        <td>{{$res->nama_lengkap}}</td>
+                        <td>{{$res->nohp}}</td>
+                        <td><a href="{{url('/admin_pengguna/edit/')}}" class="btn btn-inline btn-warning-outline">Edit
+                            </a>                                    
+                            <a href="{{url('/admin_pengguna/delete/')}}" class="btn btn-inline btn-danger-outline">Delete
+                            </a>
+                        </td>
                     </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>mutia</td>
-                        <td>xxxxxxxx</td>
-                        <td>Mutia Mutia Mutia</td>
-                        <td>000000000000</td>
-                        <td>Edit | Delete</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>felia</td>
-                        <td>xxxxxxxx</td>
-                        <td>Felia Felia Felia</td>
-                        <td>000000000000</td>
-                        <td>Edit | Delete</td>
-                    </tr>
+                    @endforeach
                 </tbody>
             </table>
         </div>
