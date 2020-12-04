@@ -62,4 +62,13 @@ class PenggunaController extends Controller
     {
         return view('pengguna/booking');
     }
+
+    public function index()
+    {
+        // $IDTempat = decrypt($id);
+
+        $tes ['res'] = DB::table('tempats')->get();
+
+        return view('landing', $tes);
+    }
 }

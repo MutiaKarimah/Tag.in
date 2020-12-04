@@ -62,7 +62,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</ul>
 							</li>
 								@if(!Auth::user())
-									<li><a href="/login">Login</a></li>
+									<li><a href="/login">Log In</a></li>
 
 								@endif
 								@if(Auth::user())
