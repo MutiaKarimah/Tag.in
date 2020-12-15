@@ -12,13 +12,35 @@
     <div class="login w3">
         <div class="login-top agileinfo">
             <h2>Silakan Masukkan Data Tempat</h2>
-            <form method="POST" action="#">
+            <form method="POST" action="{{url('/pengelolatambahtempat/store')}}">
                 @csrf
+                <div class="w3_agileits_main_grid w3l_main_grid">
+                    <div class="agileits_grid">
+                        <h5>ID Pengelola</h5>
+                        <div class="name">
+                            <select class="mdb-select md-form" id="name" type="text" name="IDpengelola" placeholder="Masukkan ID Pengelola" autofocus >
+                                @foreach($data as $pengelola)
+                                    <option value="{{$pengelola->IDpengelola}}">{{ $pengelola->IDpengelola }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="w3_agileits_main_grid w3l_main_grid">
+                    <div class="agileits_grid">
+                        <h5>ID Tempat</h5>
+                        <div class="name">
+                            <input id="name" type="text" name="IDtempat" placeholder="Masukkan ID Tempat" autofocus>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
                 <div class="w3_agileits_main_grid w3l_main_grid">
                     <div class="agileits_grid">
                         <h5>Nama Tempat</h5>
                         <div class="name">
-                            <input id="name" type="text" name="name" placeholder="Masukkan Nama Tempat" autofocus>
+                            <input id="name" type="text" name="nama_tempat" placeholder="Masukkan Nama Tempat" autofocus>
                         </div>
                         <div class="clear"></div>
                     </div>
@@ -27,7 +49,7 @@
                     <div class="agileits_grid">
                         <h5>Deskripsi Tempat</h5>
                         <div class="name">
-                            <input id="name" type="text" name="name" placeholder="Masukkan Deskripsi Tempat" autofocus>
+                            <input id="name" type="text" name="deskripsi_tempat" placeholder="Masukkan Deskripsi Tempat" autofocus>
                         </div>
                         <div class="clear"></div>
                     </div>
@@ -45,7 +67,7 @@
                     <div class="agileits_grid">
                         <h5>Kapasitas Tempat</h5>
                         <div class="name">
-                            <input id="name" type="number" name="name" placeholder="Masukkan Kapasitas Tempat" autofocus>
+                            <input id="kapasitas" type="number" name="kapasitas" placeholder="Masukkan Kapasitas Tempat" autofocus>
                         </div>
                         <div class="clear"></div>
                     </div>
@@ -53,25 +75,21 @@
                 <div class="agileits_w3layouts_main_grid w3ls_main_grid">
                     <div class="agileits_grid">
                         <h5>Status</h5>
-                        <select id="category1" name="category1" required="">
-                            <option value="category1">Not Booked</option>
-                            <option value="category2">Booked</option>
-                            <option value="category3">Coming Soon</option>
-                        </select>
+                        <input type="text" id="status" name="status" required="">
                     </div>
                 </div>
                 <div class="w3_agileits_main_grid w3l_main_grid">
                     <div class="agileits_grid">
                         <h5>Biaya Tempat (Rupiah)</h5>
                         <div class="name">
-                            <input id="name" type="number" name="name" placeholder="Masukkan Biaya Tempat" autofocus>
+                            <input id="name" type="number" name="biaya" placeholder="Masukkan Biaya Tempat" autofocus>
                         </div>
                         <div class="clear"></div>
                     </div>
                 </div>
                 <div class="clearfix"></div>
                 <div class="aitssubmitw3ls">
-                    <input type="submit" name="submit" value="Input">
+                    <input type="submit" name="submit" value="Tambah Tempat">
                 </div>
             </form>
         </div>

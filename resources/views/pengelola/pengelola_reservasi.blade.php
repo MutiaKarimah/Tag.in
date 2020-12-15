@@ -16,30 +16,21 @@
                     </tr>
                 </thead>
                 <tbody>
+                    @foreach($data as $val)
                     <tr>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>0 Hari</td>
-                        <td>01/01/2019</td>
-                        <td>Edit | Delete</td>
+                        <td>{{$val->IDreservasi}}</td>
+                        <td>{{$val->IDtempat}}</td>
+                        <td>{{$val->IDpengguna}}</td>
+                        <td>{{$val->lama_reservasi}}</td>
+                        <td>{{$val->tanggal_reservasi}}</td>
+                        <td>
+                            <a href="{{url('/pengelolareservasi/edit/')}}" class="btn btn-inline btn-warning-outline">Edit
+                            </a>                                    
+                            <a href="{{url('/pengelolareservasi/delete/')}}" class="btn btn-inline btn-danger-outline">Delete
+                            </a>
+                        </td>
                     </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>0 Hari</td>
-                        <td>01/01/2019</td>
-                        <td>Edit | Delete</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>0 Hari</td>
-                        <td>01/01/2019</td>
-                        <td>Edit | Delete</td>
-                    </tr>
+                    @endforeach
                 </tbody>
             </table>
         </div>

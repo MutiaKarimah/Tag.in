@@ -8,17 +8,17 @@
                 <thead>
                     <tr>
                         <th>ID Pengelola</th>
-                        <th>ID Tempat</th>
+                        {{-- <th>ID Tempat</th> --}}
                         <th>Username</th>
                         <th>Password</th>
                         <th>Aksi</th>
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach($data as $key => $val)
+                    @foreach($data as $val)
                     <tr>
                         <td>{{$val->IDpengelola}}</td>
-                        <td>{{$val->IDTempat}}</td>
+                        {{-- <td>{{$val->IDTempat}}</td> --}}
                         <td>{{$val->username}}</td>
                         <td>{{$val->password}}</td>
                         <td>

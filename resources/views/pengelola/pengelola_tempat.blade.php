@@ -19,39 +19,24 @@
                     </tr>
                 </thead>
                 <tbody>
+                    @foreach($data as $val)
                     <tr>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>Bale Santika</td>
-                        <td>Nikahan</td>
-                        <td>foto.jpg</td>
-                        <td>1000</td>
-                        <td>Booked</td>
-                        <td>1000000</td>
-                        <td>Edit Delete</td>
+                        <td>{{$val->IDtempat}}</td>
+                        <td>{{$val->IDpengelola}}</td>
+                        <td>{{$val->nama_tempat}}</td>
+                        <td>{{$val->deskripsi_tempat}}</td>
+                        <td>{{$val->dokumentasi_tempat}}</td>
+                        <td>{{$val->kapasitas}}</td>
+                        <td>{{$val->status}}</td>
+                        <td>{{$val->biaya}}</td>
+                        <td>
+                            <a href="{{url('/pengelolatempat/edit/')}}" class="btn btn-inline btn-warning-outline">Edit
+                            </a>                                    
+                            <a href="{{url('/pengelolatempat/delete/')}}" class="btn btn-inline btn-danger-outline">Delete
+                            </a>
+                        </td>
                     </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>Bale Santika</td>
-                        <td>Nikahan</td>
-                        <td>foto.jpg</td>
-                        <td>1000</td>
-                        <td>Booked</td>
-                        <td>1000000</td>
-                        <td>Edit Delete</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>Bale Santika</td>
-                        <td>Nikahan</td>
-                        <td>foto.jpg</td>
-                        <td>1000</td>
-                        <td>Booked</td>
-                        <td>1000000</td>
-                        <td>Edit Delete</td>
-                    </tr>
+                    @endforeach
                 </tbody>
             </table>
         </div>

@@ -52,9 +52,9 @@ class AdminController extends Controller
     }
     public function admin_pengelola()
     {
-        $res['data']=Pengelola::join('tempats','tempats.IDpengelola','=','pengelolas.IDpengelola')->get();
+        $data = DB::table('pengelolas')->get();
 
-        return view('admin/admin_pengelola',$res);
+        return view('admin/admin_pengelola',['data'=> $data]);
     }
     public function admin_admin()
     {
@@ -65,5 +65,12 @@ class AdminController extends Controller
     public function admin_tambahpengelola()
     {
         return view('admin/admin_tambahpengelola');
+    }
+    public function store(Request $request){
+        DB::table('pengelolas')->insert([
+            'username' => $request->username,
+            'password' => $request->password,
+        ]);
+        return redirect('/adminpengelola');
     }
 }

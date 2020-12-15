@@ -35,6 +35,7 @@ Route::group(['middleware' => 'auth'], function () {
 
 Route::get('/pengelolatempat', 'PengelolaController@pengelola_tempat' );
 Route::get('/pengelolatempat/tambah', 'PengelolaController@pengelola_tambahtempat' );
+Route::post('/pengelolatambahtempat/store','PengelolaController@store');
 Route::get('/pengelolareservasi', 'PengelolaController@pengelola_reservasi' );
 
 Route::get('/main', 'PenggunaController@main' );
@@ -43,6 +44,8 @@ Route::get('/adminreservasi', 'AdminController@admin_reservasi' );
 Route::get('/adminpengguna', 'AdminController@admin_pengguna' );
 Route::get('/adminpengelola', 'AdminController@admin_pengelola' );
 Route::get('/adminpengelola/tambah', 'AdminController@admin_tambahpengelola' );
+Route::post('/admintambahpengelola/store','AdminController@store');
+
 Route::get('/adminadmin', 'AdminController@admin_admin' );
 Route::get('/landing', 'HomeController@landing' );
 
