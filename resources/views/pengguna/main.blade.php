@@ -169,7 +169,7 @@
 							<h3>{{$val->nama_tempat}}</h3>
 							<li>{{$val->kapasitas}} Orang</li>
 						</ul>
-						<h4><span class="sup">Rp </span>1 Juta</h4>
+						<h4><span class="sup">Rp </span>{{$val->biaya}}</h4>
 						<div class="more">
 							<a href="{{url('/detail/'.$val->IDtempat)}}">Book Now</a>
 						</div>

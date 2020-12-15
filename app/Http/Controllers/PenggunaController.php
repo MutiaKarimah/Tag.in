@@ -58,9 +58,13 @@ class PenggunaController extends Controller
     {
         return view('signup');
     }
-    public function booking()
+    public function booking(Request $request,$id)
     {
-        return view('pengguna/booking');
+        $IDtempat = ($id);
+        $tes ['book'] = DB::table('tempats')->where('IDtempat', $IDtempat)->first();
+        // dd($tes);
+
+        return view('pengguna/booking', $tes);
     }
 
     public function index()

@@ -1,4 +1,4 @@
-@extends('pengguna/layout')
+@extends('')
 
 @section('title', 'Welcome to Tag.in')
 

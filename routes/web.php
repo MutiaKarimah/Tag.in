@@ -25,10 +25,10 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('logout', 'AuthController@logout')->name('logout');
 	Route::get('/detail/{IDtempat}', 'PenggunaController@detail' );
 
-	Route::get('/booking', 'PenggunaController@booking' );
+	Route::get('/detail/{IDtempat}/booking', 'PenggunaController@booking' );
 
 	Route::get('/', function () {
-    return view('/pengguna/main');
+    return view('/main');
 	});
 
 });
@@ -44,7 +44,7 @@ Route::get('/adminpengguna', 'AdminController@admin_pengguna' );
 Route::get('/adminpengelola', 'AdminController@admin_pengelola' );
 Route::get('/adminpengelola/tambah', 'AdminController@admin_tambahpengelola' );
 Route::get('/adminadmin', 'AdminController@admin_admin' );
-Route::get('/welcome', 'PenggunaController@index' );
+Route::get('/landing', 'HomeController@landing' );
 
 // Route::get('/main', 'PenggunaController@main' );
 // Route::get('/login', 'PenggunaController@login' );

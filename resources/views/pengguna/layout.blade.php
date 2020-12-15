@@ -50,6 +50,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 					<nav class="cl-effect-15" id="cl-effect-15">
 						<ul class="nav navbar-nav">
+							{{-- <li class="active"><a href="{{url('/main')}}">Home</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="{{url('/booking')}}">Booking</a></li> --}}
 								@if(!Auth::user())
 									<li><a href="/login">Log In</a></li>
 

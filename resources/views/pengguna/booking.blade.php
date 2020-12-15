@@ -6,19 +6,24 @@
 
 <!-- main-section -->
 <div class="head agile">
-	<div class="wthree_head_section">
+	       <div class="wthree_head_section">
 				<h3 class="w3l_header">Booking <span>Form</span></h3>
 			</div>
 		<div class="login w3">
             <div class="login-top agileits">
                 <h3>Silakan isi data berikut ini!</h3>
                 <div class="w3layouts_main_grid">
-                    <form action="#" method="post" class="w3_form_post">
+                    <form action="/reservasi" method="post" class="w3_form_post">
                         <div class="w3_agileits_main_grid w3l_main_grid">
                             <div class="agileits_grid">
                                 <h5>Nama Tempat</h5>
-                                    <input type="text" name="nama_tempat" placeholder="ex : gedung bale santika" required="">
+                                    <input type="text" placeholder="ex : gedung bale santika" required="" value="{{$book->nama_tempat}}"readonly>
                             </div>
+                        </div>
+                        <div class="w3_agileits_main_grid w3l_main_grid">
+                            <div class="agileits_grid">
+                                <input type="hidden" name="IDtempat" required="" value="{{$book->IDtempat}}"readonly>
+                        </div>
                         </div>
                         <div class="clear"></div>
                         <div class="agileits_w3layouts_main_grid w3ls_main_grid">
@@ -34,7 +39,7 @@
                         <div class="agileits_w3layouts_main_grid w3ls_main_grid">
                             <div class="agileits_w3layouts_grid">
                                 <h5>Lama Reservasi (Hari)</h5>
-                                    <input id="lama_reservasi" type="number" name="nama_tempat" placeholder="" required="">
+                                    <input id="lama_reservasi" type="number" name="lama_reservasi" placeholder="" required="">
                             </div>
                         </div>
                         <div class="clear"></div>
@@ -51,7 +56,7 @@
                         <div class="w3_main_grid">
 
                             <div class="w3_main_grid_right">
-                                <input type="submit" value="Search">
+                                <input type="submit" value="Book" href="{{url('#')}}">
                             </div>
                             <div class="clearfix"></div>
                         </div>
