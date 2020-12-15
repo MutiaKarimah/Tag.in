@@ -67,8 +67,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="grid_3 grid_5 wthree">
             <div class="col-md-2 w3-agileits">
                 <div class="list-group list-group-alternate">
-                    <a href="/pengelolareservasi" class="list-group-item"><span class="badge badge-primary">201</span> <i class="ti ti-email"></i> Reservasi </a>
-                    <a href="/pengelolatempat" class="list-group-item"><span class="badge">5021</span> <i class="ti ti-eye"></i> Tempat </a>
+                    <a href="/pengelolareservasi" class="list-group-item"><span class="badge badge-primary">></span> <i class="ti ti-email"></i> Reservasi </a>
+                    <a href="/pengelolatempat" class="list-group-item"><span class="badge badge-primary">></span> <i class="ti ti-eye"></i> Tempat </a>
                     <a href="/pengelolatempat/tambah" class="list-group-item"><span class="badge"></span> <i class="ti ti-headphone-alt"></i> Tambah Tempat </a>
                 </div>
 			</div>

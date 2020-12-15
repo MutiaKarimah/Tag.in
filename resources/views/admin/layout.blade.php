@@ -67,11 +67,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="grid_3 grid_5 wthree">
             <div class="col-md-2 w3-agileits">
                 <div class="list-group list-group-alternate">
-                    <a href="/adminreservasi" class="list-group-item"><span class="badge badge-primary">1</span> <i class="ti ti-email"></i> Reservasi </a>
-                    <a href="/admintempat" class="list-group-item"><span class="badge">1</span> <i class="ti ti-eye"></i> Tempat </a>
-                    <a href="/adminpengguna" class="list-group-item"><span class="badge">1</span> <i class="ti ti-headphone-alt"></i> Pengguna </a>
-                    <a href="/adminpengelola" class="list-group-item"><span class="badge">1</span> <i class="ti ti-comments"></i> Pengelola </a>
-                    <a href="/adminadmin" class="list-group-item"><span class="badge">1</span> <i class="ti ti-bookmark"></i> Admin </a>
+                    <a href="/adminreservasi" class="list-group-item"><span class="badge badge-primary">></span> <i class="ti ti-email"></i> Reservasi </a>
+                    <a href="/admintempat" class="list-group-item"><span class="badge badge-primary">></span> <i class="ti ti-eye"></i> Tempat </a>
+                    <a href="/adminpengguna" class="list-group-item"><span class="badge badge-primary">></span> <i class="ti ti-headphone-alt"></i> Pengguna </a>
+                    <a href="/adminpengelola" class="list-group-item"><span class="badge badge-primary">></span> <i class="ti ti-comments"></i> Pengelola </a>
+                    <a href="/adminadmin" class="list-group-item"><span class="badge badge-primary">></span> <i class="ti ti-bookmark"></i> Admin </a>
                     <a href="/adminpengelola/tambah" class="list-group-item"><span class="badge badge-danger"></span> <i class="ti ti-bell"></i> Tambah Pengelola </a>
                 </div>
 			</div>
