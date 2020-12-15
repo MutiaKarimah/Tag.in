@@ -13,7 +13,7 @@
             <div class="login-top agileits">
                 <h3>Silakan isi data berikut ini!</h3>
                 <div class="w3layouts_main_grid">
-                    <form action="/reservasi" method="post" class="w3_form_post">
+                    <form action="/api/reservasi" method="post" id="Booking1" class="w3_form_post" enctype="multipart/form-data">
                         <div class="w3_agileits_main_grid w3l_main_grid">
                             <div class="agileits_grid">
                                 <h5>Nama Tempat</h5>
@@ -31,7 +31,7 @@
                             <h5>Check In &amp; Date *</h5>
 
                                 <div class="w3_agileits_main_grid w3l_main_grid">
-                                    <input class="date" id="datepicker" name="tanggal_reservasi" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '08/13/2016';}" required="">
+                                    <input class="date" id="datepicker" name="tanggal_reservasi" type="text" value="yyyy/mm/dd" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '2016/08/13';}" required="">
                                 </div>
                                 <div class="clearfix"></div>
                             </div>
@@ -48,7 +48,7 @@
                             <h5>Check Out &amp; Date *</h5>
 
                                 <div class="w3_agileits_main_grid w3l_main_grid">
-                                    <input class="date" id="datepicker1" name="Text" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '08/13/2016';}" required="">
+                                    <input class="date" id="datepicker1" name="Text" type="text" value="yyyy/mm/dd" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '08/13/2016';}" required="">
                                 </div>
                                 <div class="clearfix"></div>
                             </div>

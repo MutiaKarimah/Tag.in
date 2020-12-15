@@ -257,7 +257,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script src="/js/jquery-ui.js"></script>
 <script>
 	$(function() {
-		$( "#datepicker,#datepicker1" ).datepicker();
+		$( "#datepicker,#datepicker1" ).datepicker({ dateFormat: 'yy-mm-dd' });
 	});
 </script>
 								<!-- //Calendar -->
