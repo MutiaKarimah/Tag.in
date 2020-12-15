@@ -1,4 +1,4 @@
-@extends('')
+@extends('pengguna.layout')
 
 @section('title', 'Welcome to Tag.in')
 
@@ -49,27 +49,79 @@
 <!-- pricing -->
 <div class="w3ls-section wthree-pricing" id="pricing">
 	<div class="container">
-		<div class="wthree_head_section">
-			<h3 class="w3l_header">Welcome to <span>Tag.in</span></h3>
-			<p>Silakan pilih gedung yang anda inginkan!</p>
-			<div class="row">
-				<div class="col-lg-3 in-gp-tb">
-				</div>
-				<div class="col-lg-6 in-gp-tb">
-					<div class="input-group">
-						<input type="text" class="form-control" placeholder="Cari berdasarkan nama tempat">
-						<span class="input-group-btn">
-							<button class="btn btn-default" type="button">Cari</button>
-						</span>
-					</div><!-- /input-group -->
-				</div><!-- /.col-lg-6 -->
-				<div class="col-lg-3 in-gp-tb">
+		<div class="w3ls-section wthree-pricing" id="pricing">
+			<div class="container">
+				<div class="wthree_head_section">
+					<h3 class="w3l_header">Welcome to <span>Tag.in</span></h3>
+					<p>Silakan Login Terlebih Dahulu untuk Memilih Gedung!</p>
 				</div>
 			</div>
 		</div>
+
+		<div class="pricing-grids-info">
+			<div class="pricing-grid grid-box">
+				<div class="w3ls-top">
+					<img src="images/g8.jpg" class="img-responsive" alt="">
+				</div>
+				<div class="w3ls-bottom">
+					<ul class="count">
+						<h3>PSBJ</h3>
+						<li>100 Orang</li>
+					</ul>
+					<h4><span class="sup">Rp</span> 300000</h4>
+					<div class="more">
+						<a href="/detail">Book Now</a>
+					</div>
+				</div>
+			</div>
+		<div class="pricing-grid grid-box">
+				<div class="w3ls-top">
+					<img src="images/g5.jpg" class="img-responsive" alt="">
+				</div>
+				<div class="w3ls-bottom">
+					<ul class="count">
+						<h3>PPBS</h3>
+						<li>200 Orang</li>
+					</ul>
+					<h4><span class="sup">Rp</span> 100000</h4>
+					<div class="more">
+						<a href="/detail">Book Now</a>
+					</div>
+				</div>
+			</div>
+			<div class="zb pricing-grid grid-box">
+				<div class="w3ls-top">
+					<img src="images/g11.jpg" class="img-responsive" alt="">
+				</div>
+				<div class="w3ls-bottom">
+					<ul class="count">
+						<h3>Bale Santika</h3>
+						<li>500 Orang</li>
+					</ul>
+					<h4><span class="sup">Rp</span> 500000</h4>
+					<div class="more">
+						<a href="/detail">Book Now</a>
+					</div>
+				</div>
+			</div>
+			<div class="pricing-grid grid-box">
+				<div class="w3ls-top">
+					<img src="images/g8.jpg" class="img-responsive" alt="">
+				</div>
+				<div class="w3ls-bottom">
+					<ul class="count">
+						<h3>Bale Wilasa</h3>
+						<li>300 Orang</li>
+					</ul>
+					<h4><span class="sup">Rp</span> 900000</h4>
+					<div class="more">
+						<a href="/detail">Book Now</a>
+					</div>
+				</div>
+			</div>
 		<div class="pricing-grids-info">
 
-			@foreach($res as $val)
+			{{-- @foreach($res as $val)
 				<div class="pricing-grid grid-box">
 					<div class="w3ls-top">
 						<img src="images/g8.jpg" class="img-responsive" alt="">
@@ -86,7 +138,7 @@
 						</div>
 					</div>
 				</div>
-			@endforeach
+			@endforeach --}}
 			<div class="clearfix"> </div>
 			<!--End-slider-script-->
 		</div>

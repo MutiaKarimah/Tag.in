@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', 'AuthController@showFormLogin')->name('login');
+// Route::get('/', 'AuthController@showFormLogin')->name('login');
 Route::get('login', 'AuthController@showFormLogin')->name('login');
 Route::post('login', 'AuthController@login');
 Route::get('signup', 'AuthController@showFormRegister')->name('signup');
@@ -27,12 +27,12 @@ Route::group(['middleware' => 'auth'], function () {
 
 	Route::get('/detail/{IDtempat}/booking', 'PenggunaController@booking' );
 
-	Route::get('/', function () {
-    return view('/main');
-	});
+	
 
 });
-
+Route::get('/', function () {
+    return view('/landing');
+	});
 Route::get('/pengelolatempat', 'PengelolaController@pengelola_tempat' );
 Route::get('/pengelolatempat/tambah', 'PengelolaController@pengelola_tambahtempat' );
 Route::post('/pengelolatambahtempat/store','PengelolaController@store');

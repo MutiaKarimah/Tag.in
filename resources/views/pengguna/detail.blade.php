@@ -14,7 +14,7 @@
             <div class="col-md-5 facts">
                 <img src="images/1.jpg" alt=" " />
             </div>
-                <h4>{{$dat->IDtempat}}</h4>
+                {{-- <h4>{{$dat->IDtempat}}</h4> --}}
             <div class="col-md-7 mission">
                 <h4>{{$dat->nama_tempat}}</h4>
                 <p>{{$dat->deskripsi_tempat}}</p>
@@ -22,7 +22,8 @@
                     <li><a data-toggle="modal"><i class="fa fa-angle-right"></i> Kapasitas : {{$dat->kapasitas}} orang</a></li>
                     <li><a data-toggle="modal"><i class="fa fa-angle-right"></i> Status : {{$dat->status}}</a></li>
                     <li><a data-toggle="modal"><i class="fa fa-angle-right"></i> Biaya : Rp. {{$dat->biaya}}</a></li>
-                    <li><a href="/detail/{{$dat->IDtempat}}/booking"> Book Now</a></li>
+                    <div class="more">
+                    <li><a href="/detail/{{$dat->IDtempat}}/booking"> Book Now</a></li></div>
                 </ul>
             <div class="clearfix"> </div>
         </div>

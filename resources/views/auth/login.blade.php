@@ -1,4 +1,4 @@
-@extends('pengguna/main')
+@extends('pengguna/layout')
 
 @section('title', 'Login')
 

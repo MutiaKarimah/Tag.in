@@ -39,7 +39,7 @@ class PenggunaController extends Controller
 
         $tes ['res'] = DB::table('tempats')->get();
 
-        return view('pengguna.main', $tes);
+        return view('main', $tes);
 
     }
     public function detail(Request $request,$id)
